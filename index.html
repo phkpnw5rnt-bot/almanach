@@ -15,29 +15,27 @@ html.dark{--bg:#0a0a0a;--text:#ededed;--accent:#1a9dd9;--accent2:#72c9f0;--line:
 html{scroll-behavior:smooth;background:var(--bg)}
 body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.5;transition:background .2s ease,color .2s ease}
 .topbar{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--line);padding:.65rem 1rem;box-shadow:0 1px 8px rgba(0,0,0,.05)}
-.topbar-inner{max-width:1500px;margin:auto;display:flex;gap:.8rem;align-items:center}.brand{display:flex;align-items:center;gap:.9rem;margin-right:auto;min-width:0}.brand-logo{width:155px;height:auto;display:block}.brand-title{color:var(--accent);font-weight:700;letter-spacing:.015em;white-space:nowrap}
+.topbar-inner{max-width:1800px;margin:auto;display:flex;gap:1.4rem;align-items:center}.brand{display:flex;align-items:center;gap:2.8rem;margin-right:auto;min-width:0}.brand-logo{width:285px;height:auto;display:block;flex:0 0 auto}.brand-title{color:var(--accent);font-weight:700;letter-spacing:.01em;white-space:nowrap;font-size:1.15rem}
 select,button{font:inherit;border:1px solid var(--accent);background:var(--control);color:var(--text);border-radius:999px;padding:.5rem .75rem;min-height:2.4rem}
 button{cursor:pointer;color:var(--accent);touch-action:manipulation}
 select{min-width:19rem;max-width:45vw}
-.intro{display:none}.reader{position:relative;max-width:1500px;margin:0 auto;padding:1rem 3.5vw 0}.story{height:calc(100vh - 10.2rem);min-height:520px;margin:0; padding:1.2rem 0 2.8rem;column-width:calc((min(1500px, 93vw) - 2.8vw)/2);column-gap:2.8vw;column-fill:auto;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:thin}.story>*{scroll-snap-align:start}.story>p,.story>h2,.story>h3,.story>figure{break-inside:avoid}
+.intro{display:none}.reader{position:relative;max-width:1800px;margin:0 auto;padding:1rem 3.5vw 0}.story{height:calc(100vh - 10.2rem);min-height:520px;width:min(100%,1082px);margin:0 auto;padding:1.2rem 0 2.8rem;column-width:520px;column-gap:42px;column-fill:auto;overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:thin}.story>*{scroll-snap-align:start}.story>p,.story>h2,.story>h3,.story>figure{break-inside:avoid}
 p{margin:.45rem 0;font-size:clamp(.9rem,.96vw,1.02rem);line-height:1.48}
 .dialogue{margin:.7rem 0}
 .speaker{color:var(--accent);font-weight:800;font-size:.78em;letter-spacing:.035em;margin-right:.35em}
 .subhead{color:var(--accent);font-size:clamp(1rem,1.3vw,1.3rem);line-height:1.08;margin:1.6rem 0 .85rem;text-transform:uppercase;break-after:avoid}
-.sectionhead{color:var(--accent);font-size:clamp(1.1rem,1.45vw,1.45rem);line-height:1.05;text-transform:uppercase;border:1px solid var(--accent);padding:.35rem .5rem;margin:0 0 1rem;break-after:avoid}
-.figure{margin:1rem 0 1.25rem;break-inside:avoid}
-.figure img{display:block;width:100%;height:auto;cursor:zoom-in;border:0}
-.figure figcaption{font-size:.7rem;line-height:1.3;color:var(--caption);margin-top:.35rem}
-.reader-nav{position:absolute;left:0;right:0;bottom:.15rem;display:flex;align-items:center;justify-content:space-between;pointer-events:none}.reader-nav button{pointer-events:auto;width:2.8rem;height:2.8rem;padding:0;font-size:1.45rem;background:var(--control);box-shadow:0 2px 10px rgba(0,0,0,.08)}.page-indicator{color:var(--accent);font-size:.72rem;letter-spacing:.08em;background:var(--bg);padding:.25rem .55rem;border-radius:999px}.footer{max-width:1500px;margin:auto;padding:1rem 3.5vw 3rem;color:var(--accent);font-size:.72rem;display:flex;justify-content:space-between;gap:1rem;border-top:1px solid var(--line)}
+.sectionhead{display:table;width:max-content;max-width:100%;color:var(--accent);font-size:clamp(1.1rem,1.45vw,1.45rem);line-height:1.05;text-transform:uppercase;border:1px solid var(--accent);padding:.35rem .5rem;margin:0 0 1rem;break-after:avoid}
+.figure{margin:1rem 0 1.25rem;break-inside:avoid;display:block}.figure img{display:block;width:auto;max-width:100%;max-height:calc(100vh - 16rem);height:auto;cursor:zoom-in;border:0}.figure figcaption{font-size:.68rem;line-height:1.3;color:var(--caption);margin-top:.35rem;max-width:100%}
+.reader-nav{position:absolute;left:0;right:0;bottom:.15rem;display:flex;align-items:center;justify-content:space-between;pointer-events:none}.reader-nav button{pointer-events:auto;width:2.8rem;height:2.8rem;padding:0;font-size:1.45rem;background:var(--control);box-shadow:0 2px 10px rgba(0,0,0,.08)}.page-indicator{color:var(--accent);font-size:.72rem;letter-spacing:.08em;background:var(--bg);padding:.25rem .55rem;border-radius:999px}.footer{max-width:1800px;margin:auto;padding:1rem 3.5vw 3rem;color:var(--accent);font-size:.72rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;border-top:1px solid var(--line)}.footer-brand img{display:block;width:530px;height:auto}
 .lightbox{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;padding:4rem 1rem 3rem;overscroll-behavior:contain}
 .lightbox.is-open{display:flex}
 .lightbox img{display:block;max-width:96vw;max-height:88vh;width:auto;height:auto;object-fit:contain;cursor:zoom-out;box-shadow:0 10px 40px rgba(0,0,0,.45)}
 .lightbox-close{position:absolute;top:.8rem;right:1rem;border:1px solid rgba(255,255,255,.65);background:rgba(0,0,0,.45);color:#fff;font-size:1.6rem;line-height:1;padding:.35rem .6rem;z-index:2}
 .lightbox-caption{position:absolute;left:1rem;right:1rem;bottom:.7rem;text-align:center;color:#fff;font-size:.78rem;line-height:1.35;text-shadow:0 1px 2px #000}
 body.lightbox-open{overflow:hidden}
-@media(max-width:1000px){.story{column-width:100%;column-gap:0}.reader{padding:1rem 2rem 0}.story{height:calc(100vh - 11rem)}}
+@media(max-width:1000px){.story{width:100%;column-width:100%;column-gap:0}.reader{padding:1rem 2rem 0}.story{height:calc(100vh - 11rem)}}
 @media(max-width:700px){
- .topbar{padding:.55rem .75rem}.topbar-inner{display:grid;grid-template-columns:1fr auto;gap:.5rem}.brand{grid-column:1/-1;white-space:normal;align-items:center}.brand-logo{width:125px}.brand-title{white-space:normal;font-size:.82rem;line-height:1.15}.topbar select{width:100%;max-width:none;min-width:0}.topbar button{white-space:nowrap}.reader{padding:0 .75rem}.story{height:auto;min-height:0;overflow:visible;padding:2rem .25rem 3rem;column-count:1}.story>p,.story>figure,.story>h2,.story>h3{break-inside:auto} p{font-size:1rem;line-height:1.58}.subhead{font-size:1.15rem;margin-top:2rem}.sectionhead{font-size:1.2rem}.figure{margin:1.4rem 0 1.6rem}.figure img{width:100%;height:auto}.reader-nav{display:none}.footer{padding:1rem 1rem 2rem;display:block}.footer button{margin-top:.8rem}
+ .topbar{padding:.55rem .75rem}.topbar-inner{display:grid;grid-template-columns:1fr auto;gap:.5rem}.brand{grid-column:1/-1;white-space:normal;align-items:center;gap:1rem}.brand-logo{width:150px}.brand-title{white-space:normal;font-size:.82rem;line-height:1.15}.topbar select{width:100%;max-width:none;min-width:0}.topbar button{white-space:nowrap}.reader{padding:0 .75rem}.story{height:auto;min-height:0;overflow:visible;padding:2rem .25rem 3rem;column-count:1}.story>p,.story>figure,.story>h2,.story>h3{break-inside:auto} p{font-size:1rem;line-height:1.58}.subhead{font-size:1.15rem;margin-top:2rem}.sectionhead{font-size:1.2rem}.figure{margin:1.4rem 0 1.6rem}.figure img{width:100%;height:auto}.reader-nav{display:none}.footer{padding:1rem 1rem 2rem;display:block}.footer-brand img{width:100%;max-width:360px}.footer button{margin-top:.8rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
@@ -46,13 +44,8 @@ body.lightbox-open{overflow:hidden}
   <header class="topbar">
    <div class="topbar-inner">
     <div class="brand">
-     <svg class="brand-logo" viewBox="0 0 310 56" role="img" aria-label="70 wichterlovo gymnázium" xmlns="http://www.w3.org/2000/svg">
-      <rect x="1" y="1" width="54" height="54" fill="none" stroke="currentColor" stroke-width="2"/>
-      <text x="8" y="38" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="800" fill="currentColor">70</text>
-      <text x="68" y="25" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="800" fill="currentColor">WICHTERLOVO</text>
-      <text x="68" y="47" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="800" fill="currentColor">GYMNÁZIUM</text>
-     </svg>
-     <span class="brand-title">Příběh našeho gymnázia očima dvou dějepravců –</span>
+     <img class="brand-logo" src="assets/WIGYM_70_logo_RGB_na-sirku.svg" alt="70 wichterlovo gymnázium"/>
+     <span class="brand-title">Příběh našeho gymnázia očima dvou dějepravců</span>
     </div>
     <select aria-label="Přejít na kapitolu" id="chapterSelect">
      <option value="">
@@ -6266,8 +6259,8 @@ body.lightbox-open{overflow:hidden}
    </div>
   </div>
   <footer class="footer">
-   <div>
-    Almanach 70 · Příběh našeho gymnázia očima dvou dějepravců
+   <div class="footer-brand">
+    <img src="assets/WIGYM_70_logo_letopocet_jen-text.svg" alt="wichterlovo gymnázium 1956—2026"/>
    </div>
    <button id="top" type="button">
     ↑ Nahoru
